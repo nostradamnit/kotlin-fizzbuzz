@@ -2,7 +2,7 @@ package kata.fizzbuzz
 
 class Engine {
     fun say(number: Int): String {
-        if (number == 3) {
+        if (number % 3 == 0) {
             return "Fizz"
         }
         if (number == 5) {
