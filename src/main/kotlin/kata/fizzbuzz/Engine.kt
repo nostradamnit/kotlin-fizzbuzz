@@ -2,6 +2,9 @@ package kata.fizzbuzz
 
 class Engine {
     fun say(number: Int): String {
+        if (isFizz(number) && isBuzz(number)) {
+            return "FizzBuzz"
+        }
         if (isFizz(number)) {
             return "Fizz"
         }
