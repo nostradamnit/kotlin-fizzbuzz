@@ -29,4 +29,10 @@ class FizzBuzzTest {
         assertEquals("Fizz", fizz)
     }
 
+    @Test
+    fun testCanSayBuzzFor10() {
+        val buzz = engine.say(10)
+        assertEquals("Buzz", buzz)
+    }
+
 }
