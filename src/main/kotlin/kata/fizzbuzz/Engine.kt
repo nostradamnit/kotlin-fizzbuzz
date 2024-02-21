@@ -5,7 +5,7 @@ class Engine {
         if (isFizz(number)) {
             return "Fizz"
         }
-        if (number % 5 == 0) {
+        if (isBuzz(number)) {
             return "Buzz"
         }
         return number.toString()
@@ -13,6 +13,10 @@ class Engine {
 
     private fun isFizz(number: Int): Boolean {
         return isMultipleOf(3, number)
+    }
+
+    private fun isBuzz(number: Int): Boolean {
+        return isMultipleOf(5, number)
     }
 
     private fun isMultipleOf(divisor: Int, number: Int): Boolean{
